@@ -17,9 +17,10 @@ gitdock <token> <user> <repo> <branch>
 <user>: Your Docker Hub username.
 <repo>: The name of your GitHub repository.
 <branch>: The name of the branch you want to monitor for changes (usually main or master).
+<e-mail>: The e-mail Alert.
 For example:
 
-gitdock abc123 myusername myproject main
+gitdock abc123 myusername myproject main john@mesdt.com
 Features
 GitDock offers the following features:
 
