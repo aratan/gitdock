@@ -9,19 +9,26 @@ Automate your Docker deployments with GitDock! This command-line interface (CLI)
 A GitHub account and repository with a Dockerfile and Docker Compose file.
 A Docker Hub account and a repository with the same name as your GitHub repository.
 A personal access token from GitHub with repo and read:user scopes.
-Your Docker Hub login credentials.
+
+## Your Docker Hub login credentials.
 Once you have everything set up, you can install GitDock and start deploying your containers! Here's how to use GitDock:
 
-gitdock <token> <user> <repo> <branch>
-<token>: Your GitHub personal access token.
+export TOKEN_GITHUB=xxxYour GitHub personal access token xxx.
+export USER_EMAIL= xxx user email server xxx
+export USER_PASS= XXX pass email server xxx
+
+
+> gitdock  <user> <repo> <branch> <email-alert>
+
 <user>: Your Docker Hub username.
 <repo>: The name of your GitHub repository.
 <branch>: The name of the branch you want to monitor for changes (usually main or master).
 <e-mail>: The e-mail Alert.
 For example:
 
-gitdock abc123 myusername myproject main john@mesdt.com
-Features
+./gitdock  myusername myproject main john@mesdt.com
+
+## Features
 GitDock offers the following features:
 
 Automated Docker deployments based on GitHub commits.
