@@ -1,6 +1,6 @@
 
 
-# GitDock
+# GitDock 0.0.4
 Automate your Docker deployments with GitDock! This command-line interface (CLI) tool monitors your GitHub repositories for new commits and automatically builds and pushes Docker images to Docker Hub. With GitDock, you can streamline the deployment process and easily manage your containerized applications.
 
 # Getting Started
@@ -15,11 +15,11 @@ Once you have everything set up, you can install GitDock and start deploying you
 
 ### file: .env
 
-export TOKEN_GITHUB=xxx Your access token xxx.
+TOKEN_GITHUB=xxx Your access token xxx.
 
-export USER_EMAIL= xxx user email server xxx
+USER_EMAIL= xxx user email server xxx
 
-export USER_PASS= XXX pass email server xxx
+USER_PASS= XXX pass email server xxx
 
 
 > gitdock  <user> <repo> <branch> <email-alert>
