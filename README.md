@@ -13,8 +13,10 @@ A personal access token from GitHub with repo and read:user scopes.
 ## Your Docker Hub login credentials.
 Once you have everything set up, you can install GitDock and start deploying your containers! Here's how to use GitDock:
 
-export TOKEN_GITHUB=xxxYour GitHub personal access token xxx.
+export TOKEN_GITHUB=xxx Your access token xxx.
+
 export USER_EMAIL= xxx user email server xxx
+
 export USER_PASS= XXX pass email server xxx
 
 
@@ -24,6 +26,7 @@ export USER_PASS= XXX pass email server xxx
 <repo>: The name of your GitHub repository.
 <branch>: The name of the branch you want to monitor for changes (usually main or master).
 <e-mail>: The e-mail Alert.
+  
 For example:
 
 ./gitdock  myusername myproject main john@mesdt.com
