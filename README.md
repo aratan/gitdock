@@ -1,5 +1,5 @@
 
-# GitDock 0.0.4
+# GitDock 0.0.5
 Automate your Docker deployments with GitDock! This command-line interface (CLI) tool monitors your GitHub repositories for new commits and automatically builds and pushes Docker images to Docker Hub. With GitDock, you can streamline the deployment process and easily manage your containerized applications.
 
 
@@ -15,14 +15,6 @@ A personal access token from GitHub with repo and read:user scopes.
 ## Your Docker Hub login credentials.
 Once you have everything set up, you can install GitDock and start deploying your containers! Here's how to use GitDock:
 
-### file: .env
-
-TOKEN_GITHUB=xxx Your access token xxx.
-
-USER_EMAIL= xxx user email server xxx
-
-USER_PASS= XXX pass email server xxx
-
 
 > gitdock  <user> <repo> <branch> <email-alert>
 
@@ -30,10 +22,33 @@ USER_PASS= XXX pass email server xxx
 <repo>: The name of your GitHub repository.
 <branch>: The name of the branch you want to monitor for changes (usually main or master).
 <e-mail>: The e-mail Alert.
+
+## FILE: .env
+
+
+### Github and E-Mail ####
+
+TOKEN_GITHUB=
+
+USER_EMAIL=
+
+USER_PASS=
+
+### Discord ####
+
+DISCORD_BOT_TOKEN=
+
+ID_SERVER=
+
+ID_CHANNEL=
   
 For example:
 
-./gitdock  myusername myproject main john@mesdt.com
+![image](https://user-images.githubusercontent.com/4398830/233481957-25c77658-abab-4c02-a27f-250a901d4d25.png)
+![image](https://user-images.githubusercontent.com/4398830/233482186-cbb173f7-635b-459a-a2d7-396cf46c5500.png)
+![image](https://user-images.githubusercontent.com/4398830/233482379-d484e385-bc7d-455a-b8c1-ac506f0a1990.png)
+
+
 
 ## Features
 GitDock offers the following features:
