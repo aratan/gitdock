@@ -46,6 +46,13 @@ ID_CHANNEL=
 
 conda activate mlops  "pytest"
 
+To not run gitdock with root permissions, you can do the following:
+
+sudo groupadd docker
+
+sudo usermod -aG docker $USER
+
+docker login
 
 ![image](https://user-images.githubusercontent.com/4398830/233807866-225dd44c-cc16-4140-b4cb-d590ae79ac6b.png)
 ![image](https://user-images.githubusercontent.com/4398830/233482186-cbb173f7-635b-459a-a2d7-396cf46c5500.png)
