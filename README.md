@@ -44,6 +44,10 @@ ID_CHANNEL=
   
 For example:
 
+conda activate mlops
+
+./gitdock aratancoders test main victor.arbiol@gmail.com
+
 ![image](https://user-images.githubusercontent.com/4398830/233481957-25c77658-abab-4c02-a27f-250a901d4d25.png)
 ![image](https://user-images.githubusercontent.com/4398830/233482186-cbb173f7-635b-459a-a2d7-396cf46c5500.png)
 ![image](https://user-images.githubusercontent.com/4398830/233482379-d484e385-bc7d-455a-b8c1-ac506f0a1990.png)
